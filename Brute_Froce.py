@@ -155,9 +155,9 @@ class BRUTE_FORCE:
             if self.ask == 1:
                 erp = {"http": f"{proxies}", "https": f"{proxies}"}
             elif self.ask == 2:
-                erp = {"http":"socks4://"f"{proxies}"}
+                erp = {"http":"socks4://"f"{proxies}", "https":"socks4://"f"{proxies}"}
             elif self.ask == 3:
-                erp = {"http": "socks5://"f"{proxies}"}
+                erp = {"http": "socks5://"f"{proxies}", "https":"socks5://"f"{proxies}"}
             username,password = combo.split(":")
         except:
             pass
